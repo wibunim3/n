@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Anime List</title>
+        <link rel="stylesheet" href="styles.css" />
+        <link rel="stylesheet" href="index.css" />
+    </head>
+    <body>
+        <header>
+            <a href="index.html"
+                ><h1><strong>Wibu</strong>Nime</h1></a
+            >
+        </header>
+        <header id="header">
+            <div class="center">
+                <form class="srch" method="get" id="searchform">
+                    <input
+                        id="searchInput"
+                        type="text"
+                        placeholder="Cari Judul Anime"
+                    />
+                    <button class="btn" type="submit" id="searchButton">
+                        🔍
+                    </button>
+                </form>
+
+                <nav class="rgnav">
+                    <label for="show-menu" class="show-menu"
+                        ><span class="dashicons dashicons-menu"></span>
+                        Menu</label
+                    >
+                    <input
+                        type="checkbox"
+                        id="show-menu"
+                        aria-label="Mobile Navigation"
+                    />
+                    <ul id="menu-navbar" class="menu">
+                        <li
+                            id="menu-item-21"
+                            class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item menu-item-21"
+                        >
+                            <a href="/" aria-current="page"
+                                ><span
+                                    class="dashicons dashicons-admin-home"
+                                ></span>
+                                Home</a
+                            >
+                        </li>
+                        <li
+                            id="menu-item-89694"
+                            class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-89694"
+                        >
+                            <a href="animelist.html"
+                                ><span
+                                    class="dashicons dashicons-arrow-down-alt2"
+                                ></span>
+                                Anime List</a
+                            >
+                        </li>
+
+                        <li
+                            id="menu-item-129343"
+                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-129343"
+                        >
+                            <a href="genres.html">Genre</a>
+                        </li>
+                    </ul>
+                    <div class="clear"></div>
+                </nav>
+            </div>
+        </header>
+        <div id="wrap">
+            <div class="clear"></div>
+            <main class="content fullwdth">
+                <div class="releases">
+                    <h1>Daftar: Anime Sub Indo Terlengkap versi WibuNime</h1>
+                </div>
+                <div class="result">
+                    <div id="a-z" class="result">
+                        <ul>
+                            <div id="animeContainer" class="anime-list">
+                              
+                                <!-- Kartu anime akan ditampilkan di sini -->
+                            </div>
+                        </ul>
+                        </div>
+                <div id="pagination" class="pagination loadmore_button">
+                        <button id="prevPage">Previous</button>
+                        <span id="pageInfo"></span>
+                        <button id="nextPage">Next</button>
+                        <!-- Pagination Controls -->
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </main>
+        </div>
+     
+        <script src="animelist.js"></script>
+    </body>
+</html>

@@ -1,0 +1,312 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Video Player</title>
+        <link rel="stylesheet" href="styles.css" />
+        <link rel="stylesheet" href="index.css" />
+        <script
+            type="text/javascript"
+            async=""
+            src="https://www.google-analytics.com/analytics.js"
+        ></script>
+        <script
+            type="text/javascript"
+            async=""
+            src="https://www.googletagmanager.com/gtag/js?id=UA-79646797-8&amp;l=dataLayer&amp;cx=c"
+        ></script>
+        <meta
+            name="robots"
+            content="follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large"
+        />
+        <link rel="dns-prefetch" href="//cdnjs.cloudflare.com" />
+    </head>
+    <body>
+        <header>
+            <a href="index.html"
+                ><h1><strong>Wibu</strong>Nime</h1></a
+            >
+        </header>
+        <header id="header">
+            <div class="center">
+                <form class="srch" method="get" id="searchform">
+                    <input
+                        id="searchInput"
+                        type="text"
+                        placeholder="Cari Judul Anime"
+                    />
+                    <button class="btn" type="submit" id="searchButton">
+                        🔍
+                    </button>
+                </form>
+
+                <nav class="rgnav">
+                    <label for="show-menu" class="show-menu"
+                        ><span class="dashicons dashicons-menu"></span>
+                        Menu</label
+                    >
+                    <input
+                        type="checkbox"
+                        id="show-menu"
+                        aria-label="Mobile Navigation"
+                    />
+                    <ul id="menu-navbar" class="menu">
+                        <li
+                            id="menu-item-21"
+                            class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item menu-item-21"
+                        >
+                            <a href="/" aria-current="page"
+                                ><span
+                                    class="dashicons dashicons-admin-home"
+                                ></span>
+                                Home</a
+                            >
+                        </li>
+                        <li
+                            id="menu-item-89694"
+                            class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-89694"
+                        >
+                            <a href="animelist.html"
+                                ><span
+                                    class="dashicons dashicons-arrow-down-alt2"
+                                ></span>
+                                Anime List</a
+                            >
+                        </li>
+
+                        <li
+                            id="menu-item-129343"
+                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-129343"
+                        >
+                            <a href="genres.html">Genre</a>
+                        </li>
+                    </ul>
+                    <div class="clear"></div>
+                </nav>
+            </div>
+        </header>
+        <div id="wrap">
+            <main class="content">
+                <article id="post-139034" class="post-139034">
+                    <header class="entry-header headpost">
+                        <h2 id="videoTitle"></h2>
+                        <div class="bottomtitle">
+                            <span class="entry-author">
+                                <span
+                                    class="dashicons dashicons-admin-users"
+                                ></span>
+                            </span>
+                            <span class="dashicons dashicons-clock"></span>
+                        </div>
+                    </header>
+                    <div id="video-content">
+                        <div class="container1">
+                            <div class="boxtab serverinfo">
+                                Selamat Menonton<span
+                                    class="dashicons dashicons-arrow-down"
+                                ></span>
+                            </div>
+                        </div>
+                        <div id="pembed" class="player-embed toogletheater">
+                            <div class="playerload"></div>
+                            <div id="videoku" class="player_embed">
+                                <div class="iframe-placeholder"></div>
+                                <div id="videoContainer">
+                                    <iframe
+                                        id="videoPlayer"
+                                        width="100%"
+                                        height="208px"
+                                        frameborder="0"
+                                        allowfullscreen
+                                    ></iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <nav class="navigation">
+                        <div id="navigation-episode" class="naveps">
+                            <div class="nvs">
+                                <div class="nonex">
+                                    <button id="prevEpisode">Prev</button>
+                                </div>
+                            </div>
+                            <div class="nvs nvsc">
+                                <div class="nonex">
+                                    <button id="backToEpisodes">
+                                        All episod
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="nvs">
+                                <div class="nonex">
+                                    <button id="nextEpisode">Next</button>
+                                </div>
+                            </div>
+                        </div>
+                    </nav>
+                    <!-- Komentar Disqus -->
+            <div id="respond" class="commentarea">
+                <div id="disqus_thread"></div>
+                <div id="dcl_btn_container">
+                    <button id="dcl_comment_btn" class="">
+                        Tampilkan Komentar
+                    </button>
+                </div>
+            </div>
+                </article>
+                <!-- Dropdown for Resolution Selection -->
+            </main>
+
+            
+
+            <aside id="sidebar_right">
+                <div class="side">
+                    <h3 class="toogletheater">
+                        Pasang Iklan
+                        <span class="dashicons dashicons-sort"></span>
+                    </h3>
+                    <div class="tagpst1"><a href="#"></a></div>
+                </div>
+                <div class="side">
+                    <h3>
+                        Episode Terbaru<span
+                            class="dashicons dashicons-pressthis"
+                        ></span>
+                    </h3>
+                    <ul class="latestepisodes">
+                        <li>
+                            <a href="#"
+                                ><div class="lefts">
+                                    Love Live! Superstar!! 3rd Season
+                                </div>
+                                <div class="rights">
+                                    <span class="video"># 1</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                ><div class="lefts">MF Ghost 2nd Season</div>
+                                <div class="rights">
+                                    <span class="video"># 1</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                ><div class="lefts">
+                                    Kami no Tou: Koubou-sen
+                                </div>
+                                <div class="rights">
+                                    <span class="video"># 1</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                ><div class="lefts">
+                                    Nageki no Bourei wa Intai shitai
+                                </div>
+                                <div class="rights">
+                                    <span class="video"># 2</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                ><div class="lefts">
+                                    Tensei Kizoku, Kantei Skill de Nariagaru 2nd
+                                    Season
+                                </div>
+                                <div class="rights">
+                                    <span class="video"># 2</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a
+                                href="https://s1.nontonanimeid.boats/tsuma-shougakusei-ni-naru-episode-2/"
+                                ><div class="lefts">
+                                    Tsuma, Shougakusei ni Naru.
+                                </div>
+                                <div class="rights">
+                                    <span class="video"># 2</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                ><div class="lefts">
+                                    “Oshi no Ko” 2nd Season
+                                </div>
+                                <div class="rights">
+                                    <span class="video"># 13</span>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="side">
+                    <h3>Series Popular Fall 2024</h3>
+                    <div class="result">
+                        <ul>
+                            <div id="anime-cards" class="card-container"></div>
+                        </ul>
+                    </div>
+                </div>
+            </aside>
+        </div>
+
+        <script src="video.js"></script>
+        <script src="detailgendre.js"></script>
+
+        <script>
+            var disqus_loaded = false; // Mencegah pemuatan Disqus beberapa kali
+            var comments_visible = false; // Status awal komentar (tersembunyi)
+
+            document
+                .getElementById("dcl_comment_btn")
+                .addEventListener("click", function () {
+                    var disqus_thread =
+                        document.getElementById("disqus_thread");
+
+                    if (!comments_visible) {
+                        // Jika komentar tidak terlihat, tampilkan dan ubah teks tombol
+                        disqus_thread.style.display = "block";
+                        this.textContent = "Tutup Komentar";
+
+                        if (!disqus_loaded) {
+                            // Memuat Disqus hanya satu kali
+                            var d = document,
+                                s = d.createElement("script");
+                            s.src = "https://wibunim3.disqus.com/embed.js";
+                            s.setAttribute("data-timestamp", +new Date());
+                            (d.head || d.body).appendChild(s);
+                            disqus_loaded = true;
+                        }
+                    } else {
+                        // Jika komentar terlihat, sembunyikan dan ubah teks tombol
+                        disqus_thread.style.display = "none";
+                        this.textContent = "Tampilkan Komentar";
+                    }
+
+                    comments_visible = !comments_visible; // Toggle status komentar
+                });
+        </script>
+
+        <noscript
+            >Silakan aktifkan JavaScript untuk melihat
+            <a href="https://disqus.com/?ref_noscript"
+                >komentar yang didukung oleh Disqus.</a
+            ></noscript
+        >
+
+        <!-- Skrip untuk menghitung komentar -->
+        <script
+            id="dsq-count-scr"
+            src="//wibunim3.disqus.com/count.js"
+            async
+        ></script>
+    </body>
+</html>
