@@ -34,8 +34,12 @@ function displayAnime() {
 
         // Tambahkan event listener untuk mengalihkan ke halaman detail
         card.addEventListener("click", () => {
-            window.location.href = `detail.html?id=${anime.id}`;
-        });
+    const lastIndex = anime.episodes.length - 1;
+        const episode = anime.episodes[lastIndex]; // Ambil episode terakhir
+    window.location.href = `video.html?animeId=${
+            anime.id
+        }&episode=${lastIndex}`;
+});
 
         container.appendChild(card);
     });
