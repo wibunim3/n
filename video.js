@@ -20,6 +20,9 @@ function displayVideo(animeId, episodeIndex) {
         const episode = anime.episodes[episodeIndex];
         document.getElementById("videoTitle").innerText = episode.title;
         document.getElementById("videoPlayer").src = episode.videoUrl;
+        document.getElementById(
+            "animeSammer"
+        ).innerText = `Tahun: ${anime.summer}`;
 
         // Navigasi episode
         document.getElementById("prevEpisode").onclick = () => {
