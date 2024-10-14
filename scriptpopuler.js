@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
         .then(response => response.json())
         .then(animeData => {
             // Sort anime data by popularity
-            animeData.sort((a, b) => b.popularity - a.popularity);
+            animeData.sort((a, b) => b.member - a.member);
 
             // Take top 10 anime
             const top10Anime = animeData.slice(0, 12);
