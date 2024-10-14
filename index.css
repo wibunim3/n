@@ -965,7 +965,7 @@ button.searchkotak2:hover {
     font-size: 13px;
     line-height: 20px;
     padding: 0 5px;
-    color: var(--font2-color);
+    color: black;
 }
 .bottomtitle span.dashicons,
 .bottomtitle span.fn {
