@@ -2656,6 +2656,30 @@ header h1 strong {
     --header2-color: #5b7ac9;
     --disqus: #fff;
 }
+
+body {
+    background-color: #fff;
+    color: #000;
+}
+
+/* Dark Theme */
+body.dark-theme {
+    background-color: #333;
+    color: #fff;
+    --primary-color: #1c1e24;
+    --secondary-color: #30323c;
+    --third-color: #3f4451;
+    --font-color: #eee;
+    --font-color2: #fff;
+    --bg-color: #121212;
+    --green-color: #28a825;
+    --header-color: #272a31;
+    --header2-color: #4c4e53;
+    --disqus-bg: #2a2d36;
+    --disqus-text: #e0e0e0;
+    --red-color: #ff6b6b;
+}
+
 #disqus_thread {
     background-color: var(--disqus-bg);
     color: var(--disqus-text);
